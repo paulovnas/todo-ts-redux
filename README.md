@@ -19,6 +19,9 @@ Utilizando a estrutura REDUX do projeto **redux-todo** e toda parte de layout e 
 ## ❓ Intuito do projeto
 Eu montei esse projeto apenas para estudar, espero que assim como os projetos citados acima me ajudaram, esse projeto possa ajudar você também :)
 
+## ⚠️ Aviso
+No console do DevTools, o projeto apresenta uma mensagem de incompatibilida com o recurso React.render na versão 18 do React, o problema é causado pelo **Toast** do Chakra UI e os desenvolvedores do framework já estão sabendo do ocorrido.
+
 ## 🚀 Vamos começar?
 Caso deseje testar esse projeto, siga os passos abaixo!
 
@@ -37,5 +40,9 @@ npm install
 ```
 + Execute npm run dev para rodar o projeto em http://localhost:3000/
 ```jsx
-npm run dev
+npm start
+``` 
++ Caso deseje buildar o projeto
+```jsx
+npm run build
 ``` 
