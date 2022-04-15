@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import BtnUpdate from './BtnUpdate';
 import { BtnDelete, BtnDeleteAll } from './BtnDelete';
 import { 
@@ -17,7 +16,6 @@ import { toggleComplete } from '../../slices/TaskSlice';
 
 
 function TaskList() {
-
     const dispatch = useDispatch();
     const tasks = useSelector(
         (state : IState) => state.tasksWatch.tasks
@@ -44,10 +42,6 @@ function TaskList() {
                 <BtnUpdate task={task} />
             </HStack>
     }
-
-    useEffect(() => {
-        localStorage.setItem('tasks', JSON.stringify(tasks));
-    }, [tasks]);
 
     if (!tasks.length) {
         return (

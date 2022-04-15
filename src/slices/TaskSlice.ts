@@ -16,14 +16,12 @@ export const taskSlice = createSlice({
                 description: action.payload,
                 complete: false
             };
-			console.log(task);
 			state.tasks.push(task);
-			console.log(state.tasks);
 		},
         updateTask: (state, action: PayloadAction<ITask>) => {
             state.tasks = state.tasks.map((task) =>
             task.id === action.payload.id
-                ? action.payload
+                ? { ...action.payload, complete: false }
                 : task
             );
 		},

@@ -1,12 +1,14 @@
-import { Heading, IconButton, VStack, useColorMode, useDisclosure, useToast, Link, Flex } from "@chakra-ui/react";
-//import TaskList from './components/tasks';
-//import AddTask from './components/AddTask';
+import { Heading, IconButton, VStack, useColorMode, Link, Flex } from "@chakra-ui/react";
 import { FaSun, FaMoon, FaGithub, FaLinkedin, FaInstagram, FaTwitter, FaFacebook } from 'react-icons/fa';
 import TaskList from "./components/Task/List";
+import { store } from "./app/store";
 
 
 function App() {
     const { colorMode, toggleColorMode } = useColorMode();
+    store.subscribe(() => {
+        localStorage.setItem('tasks', JSON.stringify(store.getState().tasksWatch.tasks));
+    })
 
     return(
         <VStack p={4} minH='100vh' pb={28}>
