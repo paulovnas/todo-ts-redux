@@ -4,6 +4,10 @@
 )](https://redux.js.org/) [![chakraui](https://img.shields.io/badge/Chakra%20UI-38B2AC?style=for-the-badge&logo=chakraui&logoColor=white)](https://chakra-ui.com/) [![reacticons](https://img.shields.io/badge/React%20Icons-E91E63?style=for-the-badge&logo=react&logoColor=white)](https://react-icons.github.io/react-icons/)
 
  Uma lista de tarefas simples utilizando algumas das tecnologias mais recentes!
+
+ <p align="center">
+  <a src="#" target="_blank"><img src="./src/images/example.png" width="100%" height="auto" /></a>
+</p>
  
 ## 👊🏻 Agradecimentos antes de começar...
 Esse projeto foi criado com base de 2 projetos distintos sendo eles:
