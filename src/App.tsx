@@ -8,6 +8,7 @@ function App() {
     const { colorMode, toggleColorMode } = useColorMode();
     store.subscribe(() => {
         localStorage.setItem('tasks', JSON.stringify(store.getState().tasksWatch.tasks));
+        localStorage.setItem('tab', store.getState().tabWatch.tab);
     })
 
     return(

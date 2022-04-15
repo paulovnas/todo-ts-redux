@@ -60,7 +60,7 @@ function BtnUpdate({ task }:IBtnUpdate) {
                 icon={<FiEdit />}
                 isRound={true}
                 onClick={onOpen}
-                disabled={task.complete}
+                hidden={task.complete}
             />
           <Modal
             isCentered
