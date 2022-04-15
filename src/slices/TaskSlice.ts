@@ -3,7 +3,7 @@ import { ITask, ITasks } from '../interfaces/Task';
 import { nanoid } from 'nanoid';
 
 const initialState = {
-	tasks: <ITasks>JSON.parse(localStorage.getItem('tasks')!) || <ITasks>[],
+	tasks: JSON.parse(localStorage.getItem('tasks')!) as ITasks || [] as ITasks,
 };
 
 export const taskSlice = createSlice({

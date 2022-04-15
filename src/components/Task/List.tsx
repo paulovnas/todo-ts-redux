@@ -22,8 +22,8 @@ function TaskList() {
     );
 
     const myTask = (task: ITask) => {
-        const op:string = task.complete == true ? '0.2' : '1';
-        const as:any = task.complete == true ? 'del' : '';
+        const op:string = task.complete ? '0.2' : '1';
+        const as:any = task.complete ? 'del' : '';
 
         return <HStack
             key={task.id}
