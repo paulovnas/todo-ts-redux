@@ -29,7 +29,7 @@ import {
                 mt='8'
                 onClick={onOpen}
                 >
-                Excluir Tasks
+                Excluir Tarefas
             </Button>
 
             <Modal isCentered isOpen={isOpen} onClose={onClose}>
