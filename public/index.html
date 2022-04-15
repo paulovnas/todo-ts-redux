@@ -18,19 +18,21 @@
       content="%PUBLIC_URL%/assets/favicon/android-chrome-192x192.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/favicon/android-chrome-192x192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCY4W0SN7R"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-HCY4W0SN7R');
+    </script>
+    
     <title>Lista de Tarefas - React/Redux</title>
   </head>
   <body>
     <noscript>Você precisa ativar o JavaScript para executar esse app!</noscript>
     <div id="root"></div>
   </body>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCY4W0SN7R"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-HCY4W0SN7R');
-  </script>
 </html>
