@@ -7,7 +7,7 @@
 
  Uma lista de tarefas simples utilizando algumas das tecnologias mais recentes!
 
-**[CLIQUE AQUI](https://foxtag-todo-react-redux.netlify.app/)** para testar!
+**[CLIQUE AQUI](https://todo.foxtag.com.br/)** para testar (by Vercel)!
 
  <p align="center">
   <a src="#" target="_blank"><img src="./src/images/example.png" width="100%" height="auto" /></a>
